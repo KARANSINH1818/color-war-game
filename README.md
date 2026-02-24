@@ -20,11 +20,6 @@ A modern and responsive Todo Application built using React + Vite + Material UI 
 
 ---
 
-## 🚀 Live Deployment
-
-🔗 https://color-war-game-km18.vercel.app/
----
-
 ## 🚀 Features
 
 * ⏳ 30-second countdown timer
