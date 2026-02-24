@@ -1,0 +1,133 @@
+/* --------------------
+   Background
+-------------------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at center, #0f2027, #000000 70%);
+  color: white;
+  text-align: center;
+}
+
+/* --------------------
+   Container
+-------------------- */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------
+   Title Hover Effect
+-------------------- */
+h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px #00ffff,
+               0 0 20px #00ffff,
+               0 0 40px #00ffff;
+  transform: scale(1.1);
+}
+
+/* --------------------
+   Board Layout
+-------------------- */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 25px;
+  margin: 40px 0;
+}
+
+/* --------------------
+   Card Hover Effect
+-------------------- */
+.card {
+  background: #1c2635;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+/* --------------------
+   Buttons
+-------------------- */
+button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px white;
+}
+
+/* Color Buttons */
+.orange { background: orange; }
+.red { background: red; }
+.green { background: green; }
+.blue { background: blue; }
+.purple { background: purple; }
+.yellow { background: goldenrod; }
+
+/* --------------------
+   Winner Banner
+-------------------- */
+.winner {
+  background: linear-gradient(45deg, gold, orange);
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+  box-shadow: 0 0 20px gold;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* --------------------
+   Large Reset Button
+-------------------- */
+.reset-btn {
+  margin-top: 40px;
+  padding: 15px 50px;     /* Bigger size */
+  font-size: 1.2rem;      /* Bigger text */
+  font-weight: bold;
+  border: 3px solid red;
+  border-radius: 12px;
+  color: red;
+  background: transparent;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: red;
+  color: white;
+  box-shadow: 0 0 25px red;
+  transform: translateY(-6px) scale(1.05);
+}
